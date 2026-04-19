@@ -1,0 +1,12 @@
+The Boring Burger, 4
+The Crazy Burger, 6
+The Insane Burger, 7
+Good Luck, 8
+Fries, 2
+Fried Pickles, 2
+Mac 'n Cheese, 2
+Jalepeño Fries, 2
+Water, 0
+Fountain Drink, 2
+Sweet Tea, 3
+Unsweet Tea, 3
