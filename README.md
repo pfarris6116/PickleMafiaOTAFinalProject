@@ -4,8 +4,7 @@
 
 A Java Swing GUI application that allows an order taker to input customer orders, validate data, calculate totals, and generate printable summaries. Built as a semester project for Programming 2 at Volunteer State Community College.
 
-![Splash Screen](screenshots/splash.png)  
-*(Add actual screenshot paths here once uploaded)*
+<img width="655" height="378" alt="Splash" src="https://github.com/user-attachments/assets/4a19e695-2428-477c-a342-4e96d8700ea0" />
 
 ## Features
 - **Graphical User Interface** built with multiple JFrame windows (Splash Screen, Menu Selection, Item Selection, Order Summary)
@@ -45,7 +44,9 @@ Data is stored temporarily in arrays/ArrayList during runtime and persisted to `
 The program will launch the Splash Screen. Follow the on-screen menus to take orders.
 
 ## Screenshots
-*(Add 3–4 images here showing each major screen: Splash, Menu Selection, Item Selection, Order Summary)*
+<img width="621" height="388" alt="Menu Selection" src="https://github.com/user-attachments/assets/5fd2e1ba-e91b-4a4a-a1d6-fcdfca2a52ab" />
+<img width="618" height="393" alt="Item Selection" src="https://github.com/user-attachments/assets/0c1efc0c-546a-492b-affb-2c9b1dc3cb7c" />
+<img width="675" height="384" alt="Order Summary" src="https://github.com/user-attachments/assets/fa07aa8f-ed27-45ac-a563-3803fb985053" />
 
 - Opening / Splash Screen
 - Menu Selection
