@@ -56,6 +56,9 @@ File persistence and data validation for a better user experience
 Structuring larger OOP projects with separation of UI and logic
 
 Developer: Parker L. Farris
+
 Course: Programming 2 – Volunteer State Community College
+
 Semester: Fall 2024
+
 Repository: https://github.com/pfarris6116/PickleMafiaOTAFinalProject
