@@ -1,70 +1,65 @@
-# Pickle Mafia Order Taking Application
+# Restaurant Order Taking Application (The Pickle Mafia)
 
-A Java Swing GUI application that allows an order taker to input customer orders, validate data, calculate totals, and generate printable summaries. Built as a semester project for Programming 2 at Volunteer State Community College.
+A desktop GUI application built in Java that simulates a restaurant order-taking system. Order takers can input customer details, select menu items (including combo meals), validate inputs, calculate totals with tax, and generate printable order summaries. Orders are saved to an external file for persistence.
+
+**Semester Project** – Programming 2, Volunteer State Community College (Fall 2024)
 
 <img width="655" height="378" alt="Splash" src="https://github.com/user-attachments/assets/4a19e695-2428-477c-a342-4e96d8700ea0" />
 
 ## Features
-- **Graphical User Interface** built with multiple JFrame windows (Splash Screen, Menu Selection, Item Selection, Order Summary)
-- Supports different menu types with radio buttons and combo boxes for item and quantity selection
-- Real-time order summary generation with calculated totals
-- Data validation with appropriate error messages
-- Persistent storage using external text files (`system.txt` for menu items and `summary.txt` for orders)
-- Option to start a new order without restarting the program or exit cleanly
-- Displays all previous orders from the summary file
+- **Multi-screen GUI** using Java Swing (JFrame, JRadioButton, JComboBox, JTextArea, etc.)
+- Customer name input with validation
+- Menu selection: Combo Meal, Burgers, Sides, or Drinks
+- Combo meal support with step-by-step category navigation (Burger → Sides → Drinks)
+- Item selection with quantity (1–5) and dynamic radio button population from file
+- Real-time order summary with calculated subtotal, 7% tax, and grand total
+- View all previous orders stored in `summary.txt`
+- Option to add more items, start a new order, or exit
+- Data persistence using external text files (`system.txt` for menu items, `summary.txt` for orders)
+- Input validation and user-friendly error messages
 
-## Technologies Used
-- **Java** (core language)
-- **Java Swing** (for all GUI components: JFrame, JButton, JLabel, JTextField, JRadioButton, JComboBox, JTextArea, etc.)
-- File I/O with text files (reading/writing orders and menu data)
-- Object-oriented design with multiple classes and static methods/variables
-- Event-driven programming for button actions
+## Technologies & Skills Demonstrated
+- **Java** (core language, OOP principles)
+- **Java Swing** – Event-driven GUI with multiple interconnected JFrames
+- **File I/O** – Reading from `system.txt` and appending to `summary.txt` using BufferedReader/BufferedWriter
+- **Data Structures** – ArrayList for menu items, custom data model class
+- **Object-Oriented Design** – Multiple classes with clear separation of concerns (UI vs. data logic)
+- Regular Expressions for parsing prices in totals calculation
+- Random order number generation
+- Event handling for buttons and user interactions
 
 ## Project Structure
-The application consists of the following main classes:
+- **ThePickleMafiaApp.java** – Main entry point, file handling, and shared logic
+- **OrderSummaryData.java** – Central data model (stores name, order number, items, combo logic, totals)
+- **SplashScreen.java** – Welcome screen + customer name input
+- **MenuSelection.java** – Category selection (including combo meal flow)
+- **ItemSelection.java** – Dynamic item selection with radio buttons and quantity
+- **OrderSummary.java** – Displays current order + totals, view all orders, and navigation options
 
-- **PickleApp2** — Main class handling program flow, file I/O, and order creation
-- **SplashScreen** — Initial screen to capture customer name
-- **MenuSelection** — Allows selection of menu type
-- **ItemSelection** — Handles item and quantity input with validation
-- **OrderSummary** — Displays the final order summary, total, and options to add more items, view all orders, or exit
-- **OrderSummaryData** — Data model class for storing order details
+## How to Run
+1. Ensure **Java JDK 8 or higher** is installed.
+2. Place the following files in the project root:
+   - `system.txt` (menu items and prices, comma-separated)
+   - `summary.txt` (will be created/updated automatically)
+3. Compile all Java files:
+   ```bash
+   javac ThePickleApp/*.java
 
-Data is stored temporarily in arrays/ArrayList during runtime and persisted to `summary.txt`.
-
-## How to Run the Application
-1. Ensure you have **Java JDK** installed (compatible with Java 8+).
-2. Clone or download the repository.
-3. Place the required data files (`system.txt` and `summary.txt`) in the project root (or update file paths in code if needed).
-4. Compile all `.java` files:
-5. Run the main class:
-
-The program will launch the Splash Screen. Follow the on-screen menus to take orders.
-
-## Screenshots
 <img width="621" height="388" alt="Menu Selection" src="https://github.com/user-attachments/assets/5fd2e1ba-e91b-4a4a-a1d6-fcdfca2a52ab" />
 <img width="618" height="393" alt="Item Selection" src="https://github.com/user-attachments/assets/0c1efc0c-546a-492b-affb-2c9b1dc3cb7c" />
 <img width="675" height="384" alt="Order Summary" src="https://github.com/user-attachments/assets/fa07aa8f-ed27-45ac-a563-3803fb985053" />
 
-- Opening / Splash Screen
-- Menu Selection
-- Item Selection
-- Order Summary
+# What I Learned
 
-## What I Learned
-- Building event-driven GUI applications with Java Swing
-- Managing multiple windows and data flow between screens
-- Reading from and writing to external files for persistence
-- Input validation and error handling in a user-friendly interface
-- Structuring a larger OOP project with separate classes for UI and data
+Designing and connecting multiple GUI windows in an event-driven application
+Managing application state across screens using a shared data object
+Reading/writing external files for data persistence
+Implementing complex flow logic (combo meals with steps)
+Input validation and clean error handling for better user experience
 
-This project demonstrates my ability to create functional desktop applications with clean user interfaces and proper data handling.
+This project strengthened my object-oriented programming, GUI development, and file-handling skills.
 
-## Repository
-**GitHub**: [https://github.com/pfarris6116/PickleMafiaOTAFinalProject]
-
----
-
-**Created by**: Parker Farris  
-**Course**: Programming 2, Volunteer State Community College  
-**Semester**: Fall 2024
+Developer: Parker L. Farris
+Course: Programming 2 – Volunteer State Community College
+Date: Fall 2024
+GitHub: https://github.com/pfarris6116/PickleMafiaOTAFinalProject
