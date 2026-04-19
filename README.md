@@ -60,6 +60,9 @@ Input validation and clean error handling for better user experience
 This project strengthened my object-oriented programming, GUI development, and file-handling skills.
 
 Developer: Parker L. Farris
+
 Course: Programming 2 – Volunteer State Community College
+
 Date: Fall 2024
+
 GitHub: https://github.com/pfarris6116/PickleMafiaOTAFinalProject
