@@ -1,6 +1,4 @@
-# PickleMafiaOTAFinalProject
-
-# Restaurant Order Taking Application
+# Pickle Mafia Order Taking Application
 
 A Java Swing GUI application that allows an order taker to input customer orders, validate data, calculate totals, and generate printable summaries. Built as a semester project for Programming 2 at Volunteer State Community College.
 
